@@ -94,7 +94,7 @@ function Nav({ children }) {
 function Logo() {
   return (
     <div className="logo">
-      <img src="/logo.png" style={{ width: "180px" }} alt="Main Logo" />
+      <img src="/logo.png" alt="Main Logo" />
       {/* <span role="img">🍿</span>
       <h1>usePopcorn</h1> */}
     </div>
@@ -215,7 +215,7 @@ function WatchedMoviesSummary({ watched }) {
         </p>
         <p>
           <span>⏳</span>
-          <span>{avgRuntime} min</span>
+          <span>{avgRuntime.toFixed(0)} mins</span>
         </p>
       </div>
     </div>

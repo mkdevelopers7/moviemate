@@ -30,7 +30,7 @@ export function useMovies(query) {
           setIsLoading(false);
         }
       }
-      console.log(query.length);
+
       if (query.length === 0) {
         setMovies([]);
         setError("Please start by typing movies name in search bar");
